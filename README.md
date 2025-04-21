@@ -5,7 +5,6 @@ This project analyzes Superstore sales data from 2014 to 2017 to identify trends
 
 ### Data Sources
 The analysis is based on a “sample Superstore.csv dataset” containing sales data from 2014 to 2017.
-[Download here](https://www.kaggle.com/datasets/vivek468/superstore-dataset-final)
 
 ### Tools Used
 - Excel: Data Cleaning
@@ -40,6 +39,7 @@ WHERE Order_Date BETWEEN '2014-01-01' AND '2017-12-31'
 AND Ship_Date BETWEEN '2014-01-01' AND '2017-12-31'
 ORDER BY Order_Date, Ship_Date ASC;
 ~~~
+![image](https://github.com/user-attachments/assets/b4d355db-67e9-43d2-9d4b-8bcdfb6baa6d)
 ~~~sql
 ---Who are our top 10 customers?
 SELECT top 10 Customer_Name, SUM(Sales) AS TotalPurchase
@@ -47,6 +47,7 @@ FROM Superstore
 GROUP BY Customer_Name
 ORDER BY TotalPurchase DESC;
 ~~~
+![image](https://github.com/user-attachments/assets/e0f9b715-2763-4a82-aedb-f3b97898e890)
 ~~~sql
 ---List our top 10 performing sub-category based on profit.
 SELECT top 10 Sub_Category, SUM(Profit) AS TotalProfit
@@ -54,6 +55,7 @@ FROM Superstore
 GROUP BY Sub_Category
 ORDER BY TotalProfit DESC;
 ~~~
+![image](https://github.com/user-attachments/assets/4a502bf8-04c8-4a51-baa2-a963e1881a5e)
 ~~~sql
 ---What are our sales by state and city?
 SELECT State, City, SUM(Sales) AS Sales_by_location
@@ -61,6 +63,7 @@ FROM Superstore
 GROUP BY State, City
 ORDER BY Sales_by_location DESC;
 ~~~
+![image](https://github.com/user-attachments/assets/85085af2-2257-4ff4-a6e3-0c42275d7736)
 ~~~sql
 ---What are our average sales by regions?
 SELECT Region, AVG(Sales) AS Avg_sales_by_region
@@ -68,6 +71,7 @@ FROM Superstore
 GROUP BY Region
 ORDER BY Avg_sales_by_region DESC;
 ~~~
+![image](https://github.com/user-attachments/assets/46eb7d20-06f6-43ba-9c80-0d2b2641901b)
 ~~~sql
 ---What are our sales by segments?
 SELECT Segment, SUM(Sales) AS Sales_by_segment
@@ -75,6 +79,7 @@ FROM Superstore
 GROUP BY Segment
 ORDER BY Sales_by_segment DESC;
 ~~~
+![image](https://github.com/user-attachments/assets/9ef24789-9766-41bd-8372-39d629a64802)
 ~~~sql
 ---Sales by ship_mode.
 SELECT Ship_Mode, SUM(Sales) AS Sales_by_shipmode
@@ -82,6 +87,7 @@ FROM Superstore
 GROUP BY Ship_Mode
 ORDER BY Sales_by_shipmode DESC;
 ~~~
+![image](https://github.com/user-attachments/assets/65bd8755-bca8-47be-9172-dc84200c4072)
 ~~~sql
 ---Average sales by category
 SELECT Category, AVG(Sales) AS Sales_by_category
@@ -89,6 +95,7 @@ FROM Superstore
 GROUP BY Category
 ORDER BY Sales_by_category DESC;
 ~~~
+![image](https://github.com/user-attachments/assets/09a72c1f-f0f3-4b6a-a7b3-0b4df4f1209a)
 
 ### Results/Findings
 The analysis of Superstore sales data from 2014 to 2017 reveals:
