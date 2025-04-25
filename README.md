@@ -78,7 +78,7 @@ FROM Superstore
 GROUP BY Segment
 ORDER BY Sales_by_segment DESC;
 ~~~
-![image](https://github.com/user-attachments/assets/9ef24789-9766-41bd-8372-39d629a64802)
+![image](https://github.com/user-attachments/assets/9244efe1-97ec-4450-9b6b-9087327ce102)
 ~~~sql
 ---Sales by ship_mode.
 SELECT Ship_Mode, SUM(Sales) AS Sales_by_shipmode
