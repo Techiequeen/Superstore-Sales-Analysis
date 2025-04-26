@@ -1,7 +1,7 @@
 # Superstore-Sales-Analysis
 
 ### Project Overview
-This project analyzes Superstore sales data identify trends, insights, and recommendations for business improvement. The analysis explores sales performance, customer behavior, and product trends to inform data-driven decision-making.
+This project analyzes Superstore sales data to identify trends, insights, and recommendations for business improvement. The analysis explores sales performance, customer behavior, and product trends to inform data-driven decision-making.
 
 ### Data Sources
 The analysis is based on a “sample Superstore.csv dataset” containing sales data.
