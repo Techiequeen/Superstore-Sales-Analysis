@@ -17,6 +17,7 @@ Data cleaning and pre-processing were carried out at the initial stage to ensure
 - Fixing the un-standardized date format
 - Handling duplicates
 - Data cleaning and formatting
+- Creating additional numeric columns
 
 ### Exploratory Data Analysis (EDA)
 The EDA process involves analyzing the Superstore sales dataset to understand the distribution of variables, identify patterns and trends, detect potential issues, and answer key questions:
