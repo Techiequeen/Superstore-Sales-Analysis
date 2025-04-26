@@ -40,6 +40,7 @@ WHERE Order_Date BETWEEN '2014-01-01' AND '2017-12-31'
 AND Ship_Date BETWEEN '2014-01-01' AND '2017-12-31'
 ORDER BY Order_Date, Ship_Date ASC;
 ~~~
+![image](https://github.com/user-attachments/assets/03895bfe-f7e0-4c39-96a0-47bb6acee575)
 ~~~sql
 ---Who are our top 10 customers?
 SELECT top 10 Customer_Name, SUM(Sales) AS TotalPurchase
